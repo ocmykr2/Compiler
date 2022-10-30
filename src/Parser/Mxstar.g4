@@ -9,7 +9,7 @@ classDef
 
 funcDef : returnType Identifier '(' funcVarDefList? ')' block;
 constructFunc : Identifier '('funcVarDefList ')' block;
-lambda : '[' '&'? ']' '(' funcVarDefList ')' '->' block;
+lambda : '[' '&'? ']' '(' funcVarDefList ')' '->' block '(' expressionList ')';
 
 block : '{' statement* '}';
 

@@ -21,7 +21,7 @@ public class Compiler {
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-70.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-4.mx");
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-11.mx");
-        //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/condition.mx");
+//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-1.mx");
         try {
             MxstarLexer lexer;
             lexer = new MxstarLexer(input);

@@ -6,7 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="dae04137-6801-477c-9738-801e8714af8e" name="Changes" comment="Semantic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semantic/AST/Node/ForStmtNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/ForStmtNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Parser/Mxstar.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Parser/Mxstar.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sema/basic-package/basic-1.mx" beforeDir="false" afterPath="$PROJECT_DIR$/sema/basic-package/basic-1.mx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Mxstar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Mxstar.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Mxstar.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Mxstar.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/MxstarParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/MxstarParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semantic/AST/ASTBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/AST/ASTBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +131,7 @@
       <workItem from="1667038342510" duration="8782000" />
       <workItem from="1667052783217" duration="16013000" />
       <workItem from="1667101694202" duration="17932000" />
-      <workItem from="1667133879157" duration="1498000" />
+      <workItem from="1667133879157" duration="2845000" />
     </task>
     <task id="LOCAL-00001" summary="Semantic">
       <created>1667133476971</created>

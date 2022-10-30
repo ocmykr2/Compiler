@@ -157,6 +157,8 @@ public class ASTBuilder extends MxstarBaseVisitor<ASTNode> {
         LambdaExprNode lambda = new LambdaExprNode(new position(ctx), (StmtNode)visit(ctx.lambda().block()));
         if(ctx.lambda().funcVarDefList() != null)
             ctx.lambda().funcVarDefList().funcVarDef().forEach(x -> lambda.allVar.add((FuncVarDefNode)visit(x)));
+        if(ctx.lambda().expressionList() != null)
+            ctx.lambda().expressionList().expression().forEach(x -> lambda.allExpr.add((ExprNode) visit(x)));
         return lambda;
     }
 
@@ -165,6 +167,8 @@ public class ASTBuilder extends MxstarBaseVisitor<ASTNode> {
         LambdaExprNode lambda = new LambdaExprNode(new position(ctx), (StmtNode)visit(ctx.block()));
         if(ctx.funcVarDefList() != null)
             ctx.funcVarDefList().funcVarDef().forEach(x -> lambda.allVar.add((FuncVarDefNode)visit(x)));
+        if(ctx.expressionList() != null)
+            ctx.expressionList().expression().forEach(x -> lambda.allExpr.add((ExprNode) visit(x)));
         return lambda;
     }
 
