@@ -12,7 +12,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
 
 import java.io.InputStream;
 
-public class Main {
+public class Compiler {
     public static void main(String[] args) throws Exception{
         InputStream input_stream = System.in;
         CharStream input = CharStreams.fromStream((input_stream));

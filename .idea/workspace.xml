@@ -4,270 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae04137-6801-477c-9738-801e8714af8e" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_10_1_complete.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Compiler.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/antlr-4.10.1-complete.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/Parser/Mxstar.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/Parser/Mxstar.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/Parser/MxstarBaseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/Parser/MxstarBaseVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/Parser/MxstarLexer.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/Parser/MxstarLexer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/Parser/MxstarLexer.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/Parser/MxstarListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/Parser/MxstarParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/Parser/MxstarVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-10.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-11.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-4.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-5.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-6.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-7.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-8.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/array-package/array-9.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-10.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-11.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-12.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-13.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-14.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-15.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-16.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-17.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-18.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-19.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-20.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-21.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-22.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-23.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-24.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-25.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-26.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-27.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-28.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-29.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-30.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-31.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-32.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-33.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-34.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-35.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-36.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-37.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-38.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-39.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-4.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-40.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-41.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-42.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-43.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-44.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-45.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-46.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-47.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-48.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-49.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-5.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-50.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-51.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-52.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-53.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-54.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-55.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-56.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-57.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-58.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-59.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-6.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-60.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-61.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-62.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-63.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-64.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-65.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-66.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-67.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-68.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-69.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-7.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-70.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-71.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-8.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/basic-package/basic-9.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/bool-compare.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/breakcontinue-package/breakcontinue-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/breakcontinue-package/breakcontinue-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/breakcontinue-package/breakcontinue-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/breakcontinue-package/breakcontinue-4.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/breakcontinue-package/breakcontinue-5.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/builtin-func-package/builtin-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/builtin-func-package/builtin-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/builtin-func-package/builtin-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/builtin-func-package/builtin-4.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-10.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-11.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-12.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-13.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-14.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-15.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-16.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-4.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-5.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-6.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-7.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-8.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/class-package/class-9.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/codeforces-package/1145A.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/codeforces-package/122A.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/codeforces-package/158A.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/codeforces-package/1A.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/codeforces-package/231A.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/codeforces-package/263A.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/codeforces-package/399A.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/codeforces-package/4A.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/codeforces-package/69A.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/codeforces-package/71A.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/condition.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/expression-package/expression-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/expression-package/expression-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/expression-package/expression-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/expression-package/expression-4.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/expression-package/expression-5.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/function-package/function-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/function-package/function-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/function-package/function-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/function-package/function-4.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/function-package/function-5.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/function-package/function-6.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/if-package/if-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/if-package/if-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/if-package/if-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/judgelist.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/loop-package/loop-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/loop-package/loop-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/loop-package/loop-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-10.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-11.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-12.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-13.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-14.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-15.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-16.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-17.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-18.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-19.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-20.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-21.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-22.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-23.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-24.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-25.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-26.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-27.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-28.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-29.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-30.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-31.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-32.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-33.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-34.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-35.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-36.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-37.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-4.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-5.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-6.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-7.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-8.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/misc-package/misc-9.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/old_sema_list.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/scope-package/scope-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/scope-package/scope-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/scope-package/scope-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/scope-package/scope-4.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/scope-package/scope-5.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/scope-package/scope-6.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/scope-package/scope-7.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/scope-package/scope-8.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/string-package/string-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/symbol-package/symbol-1.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/symbol-package/symbol-2.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/symbol-package/symbol-3.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/symbol-package/symbol-4.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/symbol-package/symbol-5.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/symbol-package/symbol-6.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/symbol-package/symbol-7.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sema/test.mx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Checker/Scope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Checker/SemanticChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Checker/SymbolCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Checker/Symbols.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Mxstar.g4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Mxstar.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Mxstar.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/MxstarBaseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/MxstarBaseVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/MxstarLexer.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/MxstarLexer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/MxstarLexer.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/MxstarListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/MxstarParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/MxstarVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/ASTBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/ASTVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/ASTNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/AssignExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/BinaryExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/BlockStmtNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/BracketExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/CallExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/ClassDefNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/CtrlStmtNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/EmptyStmtNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/ExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/ExprStmtNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/ForStmtNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/FuncDefNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/FuncVarDefNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/IfStmtNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/LambdaExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/MemberNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/NvarExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/PrefExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/PrimaryExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/ProgramNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/ReturnStmtNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/StmtNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/SubscriptExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/SuffExprNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/VarDefStmtNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/VarSubDefNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/WhileStmtNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Error_/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Error_/SemanticError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Error_/SyntaxError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/MxstarErrorListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/position.java" afterDir="false" />
+    <list default="true" id="dae04137-6801-477c-9738-801e8714af8e" name="Changes" comment="Semantic">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,31 +36,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/sei/Compiler/src/Parser",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "库",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sei/Compiler/src/Parser&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
-      "ANTLRv4",
-      "PLAIN_TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
+      &quot;ANTLRv4&quot;,
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Semantic.AST.Node" />
@@ -345,7 +83,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Compiler" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="Compiler" />
       <module name="Compiler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -376,8 +114,17 @@
       <workItem from="1666974754160" duration="2289000" />
       <workItem from="1667038342510" duration="8782000" />
       <workItem from="1667052783217" duration="16013000" />
-      <workItem from="1667101694202" duration="17374000" />
+      <workItem from="1667101694202" duration="17932000" />
+      <workItem from="1667133879157" duration="909000" />
     </task>
+    <task id="LOCAL-00001" summary="Semantic">
+      <created>1667133476971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667133476971</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +135,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -396,6 +155,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Semantic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Semantic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
