@@ -2,7 +2,6 @@ package Semantic.AST.Node;
 
 import Semantic.AST.ASTVisitor;
 import Utils.position;
-import com.sun.javaws.jnl.IconDesc;
 
 public class ForStmtNode extends StmtNode {
     public ExprNode init = null, cond = null, chg = null;
