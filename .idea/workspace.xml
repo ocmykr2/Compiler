@@ -5,23 +5,203 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dae04137-6801-477c-9738-801e8714af8e" name="Changes" comment="Semantic">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/IRPrinter" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/builtin.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/check.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e1.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e10.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e10.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e2.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e3.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e3.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e4.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e4.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e5.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e5.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e6.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e6.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e7.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e7.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e8.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e8.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e9.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/e9.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/judgelist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/shortest_path/dijkstra.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/shortest_path/floyd.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/shortest_path/spfa.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/sorting/bubble_sort.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/sorting/merge_sort.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/sorting/quick_sort.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/sorting/selection_sort.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/std/queue.mt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t1.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t10.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t10.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t11.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t11.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t12.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t13.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t14.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t15.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t16.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t17.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t17.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t18.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t19.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t2.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t20.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t21.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t22.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t23.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t24.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t25.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t26.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t27.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t28.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t29.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t3.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t30.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t31.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t32.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t33.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t34.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t35.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t36.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t37.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t38.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t39.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t4.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t4.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t40.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t41.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t42.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t43.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t44.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t45.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t46.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t47.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t48.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t49.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t5.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t5.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t50.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t51.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t52.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t53.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t54.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t55.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t56.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t57.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t58.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t59.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t6.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t6.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t60.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t61.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t62.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t63.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t64.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t66.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t67.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t68.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t69.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t7.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t7.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t70.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t8.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t8.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t9.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codegen/t9.mx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BuiltinFuncC.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BuiltinPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/ASMInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/Arith.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/Auipc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/Beqz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/Call.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/J.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/La.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/Li.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/Lui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/Lw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/Mv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/Ret.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMInst/Sw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMValue/ASMBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMValue/ASMFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMValue/ASMRoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMValue/Operand/Immediate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMValue/Operand/Operand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMValue/Operand/PhyReg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMValue/Operand/Reg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMValue/Operand/Symbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ASMValue/Operand/VirtualReg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/RegAllocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ViolentAllocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/Assembly/ViolentBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Constant/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Constant/EmptyConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Constant/IntConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Constant/NullConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Constant/StrConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/IRBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/IRPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/IRScope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/IRVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Type/ArrayType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Type/FuncType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Type/IntType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Type/PtrType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Type/StructType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Type/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Type/TypeTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Global/BasicBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Global/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Global/Module.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Global/Variable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/AllocaInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/BinaryExprInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/BitCastInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/BrInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/BrLabelInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/CallInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/GetElementPtrInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/IcmpInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/Inst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/LoadInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/PhiInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/RetInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/StoreInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Inst/UnreachableInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Use.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codegen/IR/Value/Value.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Parser/Mxstar.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Parser/Mxstar.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarBaseListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarBaseVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarLexer.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Parser/MxstarVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sema/basic-package/basic-1.mx" beforeDir="false" afterPath="$PROJECT_DIR$/sema/basic-package/basic-1.mx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Compiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parser/Mxstar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Mxstar.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parser/Mxstar.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Mxstar.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parser/MxstarParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/MxstarParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sema/basic-package/basic-48.mx" beforeDir="false" afterPath="$PROJECT_DIR$/sema/basic-package/basic-48.mx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sema/misc-package/misc-4.mx" beforeDir="false" afterPath="$PROJECT_DIR$/sema/misc-package/misc-4.mx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Checker/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checker/Scope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Checker/SemanticChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checker/SemanticChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Checker/SymbolCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checker/SymbolCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Semantic/AST/ASTBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/AST/ASTBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semantic/AST/Node/ExprNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/ExprNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semantic/AST/Node/FuncVarDefNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/FuncVarDefNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semantic/AST/Node/MemberNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/MemberNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semantic/AST/Node/PrefExprNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/PrefExprNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semantic/AST/Node/PrimaryExprNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/PrimaryExprNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semantic/AST/Node/VarSubDefNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/AST/Node/VarSubDefNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +217,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Codegen/IR/Value/Inst/CallInst.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,16 +242,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sei/Compiler/src/Parser&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sei/Compiler/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
@@ -82,24 +265,31 @@
       <recent name="Semantic.AST.Node" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Parser" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/Parser" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Semantic" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/codegen" />
       <recent name="$PROJECT_DIR$/src/Parser" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Semantic/AST/Node" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Codegen.IR" />
       <recent name="Semantic.AST" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value=" ；" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Compiler" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Compiler" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Compiler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,7 +321,13 @@
       <workItem from="1667038342510" duration="8782000" />
       <workItem from="1667052783217" duration="16013000" />
       <workItem from="1667101694202" duration="17932000" />
-      <workItem from="1667133879157" duration="2845000" />
+      <workItem from="1667133879157" duration="2962000" />
+      <workItem from="1669896233528" duration="2130000" />
+      <workItem from="1674264235015" duration="141435000" />
+      <workItem from="1674992858221" duration="51486000" />
+      <workItem from="1675087894728" duration="18470000" />
+      <workItem from="1675217413424" duration="50383000" />
+      <workItem from="1675331433184" duration="41147000" />
     </task>
     <task id="LOCAL-00001" summary="Semantic">
       <created>1667133476971</created>
@@ -178,10 +374,14 @@
     <breakpoint-manager>
       <breakpoints>
         <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="1" />
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="10" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

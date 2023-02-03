@@ -1,0 +1,5 @@
+package Codegen.Assembly.ASMValue.Operand;
+
+public abstract class Operand {
+    public abstract String toString();
+}

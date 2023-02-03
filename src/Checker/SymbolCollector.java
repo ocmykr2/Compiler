@@ -92,7 +92,7 @@ public class SymbolCollector extends ASTVisitor {
 
      @Override
      public void visit(FuncDefNode it) {
-        //System.out.println(it.id);
+//        System.out.println(it.id + ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;");
         if(curClass == null) {
             if(symbols.funcDefined(it.id))
                 throw new SemanticError(it.pos, "symbol " + it.id + " has been defined");
@@ -105,7 +105,7 @@ public class SymbolCollector extends ASTVisitor {
             if(it.id.equals(curClass.id)) {
                 if(it.return_type != null)
                 throw new SemanticError(it.pos, "Constructor for " + it.id + " has a type");
-                else it.return_type = curClass.id;
+                else it.return_type = "void";
             }
             curClass.FuncMap.put(it.id, it);
         }

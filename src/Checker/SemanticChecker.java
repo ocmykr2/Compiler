@@ -53,6 +53,7 @@ public class SemanticChecker extends ASTVisitor {
         curScope = new Scope(curScope);
         it.allVar.forEach(i -> i.accept(this));
         it.allFunc.forEach(i -> i.accept(this));
+//        System.out.println(it.allFunc.get(0).return_type + " asdasdasdasdasddddddddddddddddddddddddddddddddddddasdasdasdasd");
         curScope = curScope.fa;
         curClass = null;
     }
@@ -60,6 +61,7 @@ public class SemanticChecker extends ASTVisitor {
     public void visit(FuncDefNode it) {
         System.out.println("FuncDef!!!");
         System.out.println(it.id);
+        System.out.println(it.return_type);
         if(symbols.getClass(it.return_type) == null) {
             throw new SemanticError(it.pos, "There is no Class defined named " + it.return_type);
         }
@@ -71,7 +73,7 @@ public class SemanticChecker extends ASTVisitor {
         it.allVar.forEach(x -> x.accept(this));
 
         if(it.stmt != null) {
-            System.out.println("STMT!!!");
+            //System.out.println("STMT!!!");
             it.stmt.accept(this);
         }
 
@@ -80,13 +82,18 @@ public class SemanticChecker extends ASTVisitor {
                 throw new SemanticError(it.pos, "function " + it.id + " has no return");
             }
         }
+
         it.returned = false;
+        it.belong = curClass;
+        if(curClass != null && curClass.id.equals(curFunc.get(curFunc.size() - 1).id))
+            curClass.Construct = it;
 
         curFunc.remove(curFunc.size() - 1);
         curScope = curScope.fa;
     }
 
     public void visit(ReturnStmtNode it) {
+//        System.out.println("WHy HERE!!!!");
         if(it.expr != null) {
             it.expr.accept(this);
             if(last_func().return_type != null) {
@@ -96,8 +103,8 @@ public class SemanticChecker extends ASTVisitor {
                 System.out.println(last_func().return_type);
                 System.out.println(it.expr.type);
                 System.out.println(it.expr.pos.toString());
-                System.out.println("Impend");
-                 */
+                System.out.println("Impend");*/
+
 
                 if(curClass != null && last_func().id.equals(curClass.id)) {
                     throw new SemanticError(it.pos, "The constructor function should have no return statement.");
@@ -108,6 +115,7 @@ public class SemanticChecker extends ASTVisitor {
                     throw new SemanticError(it.pos, "The return dimensions do not match!");
                 }
             } else {
+//                System.out.println("Last Func" + last_func().id + " " + last_func().return_type);
                 last_func().return_type = it.expr.type;
                 last_func().dimension = it.expr.dimension;
             }
@@ -119,6 +127,7 @@ public class SemanticChecker extends ASTVisitor {
                     }
                 }
             } else {
+//                System.out.println("Last Func" + last_func().id + " " + last_func().return_type);
                 last_func().return_type = "null";
             }
         }

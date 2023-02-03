@@ -26,23 +26,35 @@ public class ASTBuilder extends MxstarBaseVisitor<ASTNode> {
 
     @Override
     public ASTNode visitClassDef(MxstarParser.ClassDefContext ctx) {
-        //System.out.println("Boom!");
+        System.out.println("Boom!");
         ClassDefNode cls = new ClassDefNode(new position(ctx), ctx.Identifier().getText());
 
         if(ctx.constructFunc() != null) {
+//            System.out.println("?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+//            System.out.println(cls.allFunc.size());
             ctx.constructFunc().forEach(x -> cls.allFunc.add((FuncDefNode) visit(x)));
+//            System.out.println(cls.allFunc.get(0).return_type + " " + cls.allFunc.get(0).id + " " + cls.allFunc.size());
+
         } else {
             BlockStmtNode tmp = new BlockStmtNode(new position(ctx));
             cls.allFunc.add(new FuncDefNode(new position(ctx), 0, tmp, ctx.Identifier().getText(),ctx.Identifier().getText()));
         }
 
         if (ctx.funcDef() != null) {
-            ctx.funcDef().forEach(x -> cls.allFunc.add((FuncDefNode) visit(x)));
+//            System.out.println("????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+//            System.out.println(cls.allFunc.size());
+            ctx.funcDef().forEach(x ->{
+                    cls.allFunc.add((FuncDefNode) visit(x));
+//                System.out.println(x.Identifier().toString() + " Any Girl dere");
+            });
+//            System.out.println(cls.allFunc.get(0).return_type + " " + cls.allFunc.get(0).id + " " + cls.allFunc.size());
         }
 
         if(ctx.varDefStmt() != null) {
             ctx.varDefStmt().forEach(x -> cls.allVar.add((VarDefStmtNode) visit(x)));
         }
+        //System.out.println(cls.allFunc.get(0).return_type + " " + cls.allFunc.get(0).id + " " + cls.allFunc.size());
+        System.out.println("Boom!");
 
         return cls;
     }
@@ -53,6 +65,7 @@ public class ASTBuilder extends MxstarBaseVisitor<ASTNode> {
         if(ctx.block() != null)
             System.out.println("WHAT ARE YOU DOING");
         String return_type = ctx.returnType().getText();
+//        System.out.println(ctx.Identifier().toString() + " asdaafnlvl!sSLKSJDLKJLDSJ");
         FuncDefNode funcdef = new FuncDefNode(new position(ctx), count_dim(return_type), stmt, get_type(return_type), ctx.Identifier().getText());
         if(ctx.funcVarDefList() != null) {
             ctx.funcVarDefList().funcVarDef().forEach(x -> funcdef.allVar.add((FuncVarDefNode) visit(x)));
@@ -64,6 +77,8 @@ public class ASTBuilder extends MxstarBaseVisitor<ASTNode> {
     public ASTNode visitConstructFunc(MxstarParser.ConstructFuncContext ctx) {
         StmtNode stmt = (StmtNode) visit(ctx.block());
         FuncDefNode consfuncdef = new FuncDefNode(new position(ctx), 0, stmt, null, ctx.Identifier().getText());
+//        System.out.println(ctx.Identifier().getText());
+//        System.out.println("3.1415926");
         if(ctx.funcVarDefList() != null) {
             ctx.funcVarDefList().funcVarDef().forEach(x -> consfuncdef.allVar.add((FuncVarDefNode) visit(x)));
         }

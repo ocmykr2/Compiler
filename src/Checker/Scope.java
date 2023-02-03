@@ -13,8 +13,9 @@ public class Scope {
 
     public void add(String id, VarSubDefNode var) {
         //System.out.println("ADDDDDDDDDDDD");
-        System.out.println(id);
-        System.out.println(var.type);
+        //System.out.println(id);
+        //System.out.println(var.type);
+        //System.out.println("BDDDDDDDDDDDD");
         allVar.put(id, var);
     }
 
