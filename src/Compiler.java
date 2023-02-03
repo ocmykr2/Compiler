@@ -22,14 +22,14 @@ import java.io.PrintStream;
 public class Compiler {
     public static void main(String[] args) throws Exception{
         InputStream input_stream = System.in;
-//        CharStream input = CharStreams.fromStream((input_stream));
+        CharStream input = CharStreams.fromStream((input_stream));
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-55.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-44.mx");
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-70.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-4.mx");
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-11.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/t57.mx");
-        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/e1.mx");
+//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/e1.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/sorting/merge_sort.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/shortest_path/spfa.mx");
         try {
