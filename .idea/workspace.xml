@@ -7,6 +7,7 @@
     <list default="true" id="dae04137-6801-477c-9738-801e8714af8e" name="Changes" comment="Codegen Compeleted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.s" beforeDir="false" afterPath="$PROJECT_DIR$/test.s" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +96,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Compiler" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="Compiler" />
       <module name="Compiler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,7 +134,7 @@
       <workItem from="1674992858221" duration="51486000" />
       <workItem from="1675087894728" duration="18470000" />
       <workItem from="1675217413424" duration="50383000" />
-      <workItem from="1675331433184" duration="42474000" />
+      <workItem from="1675331433184" duration="43618000" />
     </task>
     <task id="LOCAL-00001" summary="Semantic">
       <created>1667133476971</created>
@@ -156,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675431912322</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Codegen Compeleted">
+      <created>1675432590862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675432590862</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

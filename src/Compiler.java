@@ -18,12 +18,12 @@ import org.antlr.v4.runtime.tree.ParseTree;
 import java.io.InputStream;
 import java.io.PrintStream;
 
-public class Main {
+public class Compiler {
     public static void main(String[] args) throws Exception{
         InputStream input_stream = System.in;
         CharStream input = CharStreams.fromStream((input_stream));
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-24.mx");
-        //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-68.mx");
+//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-44.mx");
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-70.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-4.mx");
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-11.mx");
