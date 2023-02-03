@@ -22,7 +22,7 @@ public class Compiler {
     public static void main(String[] args) throws Exception{
         InputStream input_stream = System.in;
         CharStream input = CharStreams.fromStream((input_stream));
-//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-24.mx");
+//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-55.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-44.mx");
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-70.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-4.mx");
@@ -57,20 +57,20 @@ public class Compiler {
 
             System.out.println("Alive in SemanticChecker");
 
-            IRBuilder irBuilder = new IRBuilder("cur.module", converted_root);
+//            IRBuilder irBuilder = new IRBuilder("cur.module", converted_root);
 
-            System.out.println("Alive in Builder");
+//            System.out.println("Alive in Builder");
 
-            Module module = irBuilder.work();
+//            Module module = irBuilder.work();
 
 //            new IRPrinter(System.out).visit(module);
 
-            ViolentBuilder violentBuilder = new ViolentBuilder(module);
-            ASMRoot asmRoot = violentBuilder.doit();
+//            ViolentBuilder violentBuilder = new ViolentBuilder(module);
+//            ASMRoot asmRoot = violentBuilder.doit();
             //new RegAllocator(asmRoot).work();
 //            FileOutputStream out = new FileOutputStream("test.s");
-            new ASMPrinter(new PrintStream("test.s")).visit(asmRoot);
-            new BuiltinPrinter("builtin.s");
+//            new ASMPrinter(new PrintStream("test.s")).visit(asmRoot);
+//            new BuiltinPrinter("builtin.s");
         }
 
         catch (Error err) {

@@ -147,10 +147,10 @@ public class IRBuilder extends ASTVisitor {
 
 //        System.out.println(("asdssadasssasas"));
 
-        it.allClass.forEach(i -> i.accept(this));
         global = true;
         it.allVar.forEach(i -> {i.accept(this); /*i.allVar.forEach(j -> System.out.println(j.id));*/});
         global = false;
+        it.allClass.forEach(i -> i.accept(this));
         // 要么同层能找到,要么必然就是它
         it.allFunc.forEach(i -> i.accept(this));
         global = true;
@@ -300,6 +300,7 @@ public class IRBuilder extends ASTVisitor {
         if(it.whi == 0) {
             if(it.if_func != null) {
                 if(curClass != null) {
+                    System.out.println("WTF?????");
                     // classFunc : in class choice
                     it.classFunc = module.AllFunc.get
                             (curClass.id + "." + it.s);
@@ -312,7 +313,11 @@ public class IRBuilder extends ASTVisitor {
             //System.out.println("out0");
             //System.out.println("in1");
             var flag = curScope.if_class_get(it.s, true);
-            //System.out.println("out1");
+            if(para == null) {
+                System.out.println("FUCK1");
+            } else System.out.println(para.id + " asdasd");
+
+            System.out.println("flag " + flag);
 
             //para.id
 
@@ -331,7 +336,7 @@ public class IRBuilder extends ASTVisitor {
                 //在全局或者某个函数里
                 it.ptr = para;
                 //System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                //System.out.println(it.s);
+                System.out.println(it.s + " " + it.whi);
                 it.val = putInst(new LoadInst(para), it.s + ".val");
             }
         } else if(it.whi == 1){
@@ -519,6 +524,8 @@ public class IRBuilder extends ASTVisitor {
     public void visit(MemberNode it) {
         it.obj.accept(this);
 
+        // Should Determine HERE!!!!
+
         if(it.if_func != null) {
             if(it.obj.dimension > 0) { // size
                 it.val = null;
@@ -563,9 +570,11 @@ public class IRBuilder extends ASTVisitor {
         Inst finalInst = null;
 
         if(it.obj instanceof MemberNode tmp) {
+            System.out.println("GCDHERE!!!");
             finalInst = new CallInst(it.obj.val);
             finalInst.addUse(tmp.Begptr);
         } else {
+//            System.out.println("GCDHERE!!!");
             PrimaryExprNode primaryExprNode = (PrimaryExprNode) it.obj;
             /*if(((PrimaryExprNode) it.obj).classFunc == null) {
                 //((PrimaryExprNode) it.obj).classFunc = module.AllFunc.get(((PrimaryExprNode) it.obj).s);
