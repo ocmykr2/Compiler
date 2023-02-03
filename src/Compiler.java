@@ -15,20 +15,21 @@ import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 
+import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 
 public class Compiler {
     public static void main(String[] args) throws Exception{
         InputStream input_stream = System.in;
-        CharStream input = CharStreams.fromStream((input_stream));
+//        CharStream input = CharStreams.fromStream((input_stream));
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-55.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-44.mx");
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-70.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-4.mx");
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-11.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/t57.mx");
-//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/e1.mx");
+        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/e1.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/sorting/merge_sort.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/shortest_path/spfa.mx");
         try {
@@ -57,20 +58,20 @@ public class Compiler {
 
             System.out.println("Alive in SemanticChecker");
 
-//            IRBuilder irBuilder = new IRBuilder("cur.module", converted_root);
+            IRBuilder irBuilder = new IRBuilder("cur.module", converted_root);
 
-//            System.out.println("Alive in Builder");
+            System.out.println("Alive in Builder");
 
-//            Module module = irBuilder.work();
+            Module module = irBuilder.work();
 
 //            new IRPrinter(System.out).visit(module);
 
-//            ViolentBuilder violentBuilder = new ViolentBuilder(module);
-//            ASMRoot asmRoot = violentBuilder.doit();
+            ViolentBuilder violentBuilder = new ViolentBuilder(module);
+            ASMRoot asmRoot = violentBuilder.doit();
             //new RegAllocator(asmRoot).work();
-//            FileOutputStream out = new FileOutputStream("test.s");
-//            new ASMPrinter(new PrintStream("test.s")).visit(asmRoot);
-//            new BuiltinPrinter("builtin.s");
+            FileOutputStream out = new FileOutputStream("test.s");
+            new ASMPrinter(new PrintStream("test.s")).visit(asmRoot);
+            new BuiltinPrinter("builtin.s");
         }
 
         catch (Error err) {
