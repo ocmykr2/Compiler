@@ -71,7 +71,7 @@ public class Compiler {
             ASMRoot asmRoot = violentBuilder.doit();
             //new RegAllocator(asmRoot).work();
 //            FileOutputStream out = new FileOutputStream("test.s");
-            new ASMPrinter(new PrintStream("test.s")).visit(asmRoot);
+            new ASMPrinter(new PrintStream("output.s")).visit(asmRoot);
             new BuiltinPrinter("builtin.s");
         }
 
