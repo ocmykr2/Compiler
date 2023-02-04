@@ -31,8 +31,8 @@ public class Compiler {
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-11.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/check.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/check.mx");
-//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/sorting/merge_sort.mx");
-//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/shortest_path/spfa.mx");
+//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/sorting/bubble_sort.mx");
+//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/shortest_path/dijkstra.mx");
         try {
             MxstarLexer lexer;
             lexer = new MxstarLexer(input);
@@ -69,7 +69,6 @@ public class Compiler {
 
             ViolentBuilder violentBuilder = new ViolentBuilder(module);
             ASMRoot asmRoot = violentBuilder.doit();
-//            new RegAllocator(asmRoot).work();
 //            FileOutputStream out = new FileOutputStream("test.s");
             new ASMPrinter(new PrintStream("output.s")).visit(asmRoot);
             new BuiltinPrinter("builtin.s");

@@ -502,7 +502,7 @@ public class IRBuilder extends ASTVisitor {
         curFunc.AllBlock.add(curBlock);
         BasicBlock oldBreakdest = curBreakdest, oldContdest = curContdest;
         curBreakdest = forEnd;
-        curContdest = forCond;
+        curContdest = forChg;
         if(it.stmt != null)
             it.stmt.accept(this);
         curBreakdest = oldBreakdest;
