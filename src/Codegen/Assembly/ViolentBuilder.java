@@ -68,16 +68,6 @@ public class ViolentBuilder extends IRVisitor  { // Pass
         }
     }
 
-    void delRegUse(Reg reg) {
-        AtomicInteger tmp = UseCnt.get(reg);
-        tmp.decrementAndGet();
-    }
-
-    boolean Notused(Reg reg) {
-        AtomicInteger here = UseCnt.get(reg);
-        return reg instanceof VirtualReg && (here == null || here.get() == 0);
-    }
-
     public void visit(Module it) {
         it.AllFunc.forEach((a, b) -> {
             ASMFunc asmFunc = new ASMFunc(b.id, b.AllVar.size());
@@ -100,7 +90,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
                 j.AllInst.forEach(k -> {
                     if(k.imm != null) {
                         if(k.imm instanceof Immediate kimm) {
-                            if(kimm.whom != null && kimm.flag) {
+                            if(kimm.whom != null && !kimm.flag) {
                                 ((Immediate) k.imm).val -= kimm.whom.StackSize;
                                 ((Immediate) k.imm).flag = true;
 //                                System.out.println("HERE");
@@ -193,6 +183,8 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             curBlock.addInst(new Sw(Reg.getReg("t" + i), Reg.sp, new Immediate(StackSize)));
             StackSize += 4;
         }
+
+//        System.out.println(StackSize);
 
 
         //Callee finished
@@ -426,7 +418,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
                     curBlock.addInst(new Mv(Reg.getReg("a" + (i - 1)), t1));
                     continue;
                 }
-                curBlock.addInst(new Sw(t1, Reg.sp, new Immediate(OFFSET + (i - 8) * 4, false, toFunc)));
+                curBlock.addInst(new Sw(t1, Reg.sp, new Immediate(OFFSET + (i - 1) * 4, false, toFunc)));
             }
             curBlock.addInst(new Call(toFunc));
             if(!it.type.isVoid()) {
