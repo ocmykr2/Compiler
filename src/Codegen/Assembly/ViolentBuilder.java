@@ -136,12 +136,14 @@ public class ViolentBuilder extends IRVisitor  { // Pass
     }
 
     void FirstIn(int t) {
+        t = 4;
         for(int i = 0; i < t; ++ i) {
             curBlock.addInst(new Sw(Reg.getReg("t" + i), Reg.sp, new Immediate(i * 4 + 4)));
         }
     }
 
     void LastOut(int t) {
+        t = 4;
         for(int i = 0; i < t; ++ i) {
             curBlock.addInst(new Lw(Reg.getReg("t" + i), Reg.sp, new Immediate(i * 4 + 4)));
         }
@@ -361,16 +363,15 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             System.out.println("icmp");
             LastOut(3);
         } else if(it instanceof BitCastInst) {
-            FirstIn(2);
+            FirstIn(1);
 //            curBlock.addInst(new Mv(getVal(it), getVal(it.getUse(0))));
             Reg rd = getVal(it);
             Reg rs1 = getVal(it.getUse(0));
-            Get(rs1, t1);
+            Get(rs1, t0);
             System.out.println("Bitcast");
-            curBlock.addInst(new Mv(t0, t1));
             Assign(rd, t0);
             System.out.println("Bitcast");
-            LastOut(2);
+            LastOut(1);
         } else if(it instanceof BrInst) {
             FirstIn(1);
             Reg rs1 = getVal(it.getUse(0));
