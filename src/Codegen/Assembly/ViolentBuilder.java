@@ -34,7 +34,7 @@ import static java.lang.StrictMath.max;
 public class ViolentBuilder extends IRVisitor  { // Pass
     public ASMRoot root;
 
-    public int OFFSET = 32;
+    public int OFFSET = 20;
 
     public Module module;
     public HashMap<Function, ASMFunc> FuncRelation = new HashMap<>();
@@ -57,15 +57,6 @@ public class ViolentBuilder extends IRVisitor  { // Pass
     public ASMRoot doit() {
         visit(module);
         return root;
-    }
-
-    void addRegUse(Reg reg) {
-        AtomicInteger here = UseCnt.get(reg);
-        if(here == null) {
-            UseCnt.put(reg, new AtomicInteger(1));
-        } else {
-            here.incrementAndGet();
-        }
     }
 
     public void visit(Module it) {
@@ -144,14 +135,14 @@ public class ViolentBuilder extends IRVisitor  { // Pass
         });
     }
 
-    void FirstIn() {
-        for(int i = 0; i < 4; ++ i) {
+    void FirstIn(int t) {
+        for(int i = 0; i < t; ++ i) {
             curBlock.addInst(new Sw(Reg.getReg("t" + i), Reg.sp, new Immediate(i * 4 + 4)));
         }
     }
 
-    void LastOut() {
-        for(int i = 0; i < 4; ++ i) {
+    void LastOut(int t) {
+        for(int i = 0; i < t; ++ i) {
             curBlock.addInst(new Lw(Reg.getReg("t" + i), Reg.sp, new Immediate(i * 4 + 4)));
         }
     }
@@ -179,7 +170,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
         StackSize += 4;
         curBlock.addInst(new Sw(Reg.ra, Reg.sp, new Immediate(0)));
 
-        for(int i = 0; i < 7; ++ i) {
+        for(int i = 0; i < 4; ++ i) {
             curBlock.addInst(new Sw(Reg.getReg("t" + i), Reg.sp, new Immediate(StackSize)));
             StackSize += 4;
         }
@@ -208,7 +199,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
 
         // restore saved reg
         curBlock.addInst(new Lw(Reg.ra, Reg.sp, new Immediate(0)));
-        for(int i = 0; i < 7; ++ i) {
+        for(int i = 0; i < 4; ++ i) {
             curBlock.addInst(new Lw(Reg.getReg("t" + i), Reg.sp, new Immediate(i * 4 + 4)));
         }
 
@@ -301,7 +292,6 @@ public class ViolentBuilder extends IRVisitor  { // Pass
     }
 
     public void visit(Inst it) {
-        FirstIn();
         Reg t0 = Reg.getReg("t0");
         Reg t1 = Reg.getReg("t1");
         Reg t2 = Reg.getReg("t2");
@@ -312,6 +302,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             vreg.spimm = StackSize; StackSize += 4;
             ValueRelation.put(it, vreg);
         } else if(it instanceof BinaryExprInst) {
+            FirstIn(3);
             Reg rs1 = getVal(it.getUse(0));
             Get(rs1, t1);
 
@@ -323,7 +314,9 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             System.out.println("Binary");
             Assign(rd, t0);
             System.out.println("Binary");
+            LastOut(3);
         } else if(it instanceof IcmpInst) {
+            FirstIn(3);
             Reg rs1 = getVal(it.getUse(0));
             Get(rs1, t1);
             Reg rs2 = getVal(it.getUse(1));
@@ -366,7 +359,9 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             System.out.println("icmp");
             Assign(rd, t0);
             System.out.println("icmp");
+            LastOut(3);
         } else if(it instanceof BitCastInst) {
+            FirstIn(2);
 //            curBlock.addInst(new Mv(getVal(it), getVal(it.getUse(0))));
             Reg rd = getVal(it);
             Reg rs1 = getVal(it.getUse(0));
@@ -375,14 +370,18 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             curBlock.addInst(new Mv(t0, t1));
             Assign(rd, t0);
             System.out.println("Bitcast");
+            LastOut(2);
         } else if(it instanceof BrInst) {
+            FirstIn(1);
             Reg rs1 = getVal(it.getUse(0));
-            Get(rs1, t1);
-            curBlock.addInst(new Beqz(t1, BlockRelation.get((BasicBlock)it.getUse(2))));
+            Get(rs1, t0);
+            curBlock.addInst(new Beqz(t0, BlockRelation.get((BasicBlock)it.getUse(2))));
             curBlock.addInst(new J(BlockRelation.get((BasicBlock) it.getUse(1))));
+            LastOut(1);
         } else if(it instanceof BrLabelInst) {
             curBlock.addInst(new J(BlockRelation.get((BasicBlock) it.getUse(0))));
         } else if(it instanceof GetElementPtrInst) {
+            FirstIn(4);
             Reg lastPlace = getVal((it.OperandList.get(0)).v);
             Get(lastPlace, t0);
             Type lastType = (it.OperandList.get(0)).v.type;
@@ -408,6 +407,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             Assign(vreg, t0);
             System.out.println("GEP");
             ValueRelation.put(it, vreg);
+            LastOut(4);
         } else if(it instanceof CallInst) {
             ASMFunc toFunc = FuncRelation.get(it.OperandList.get(0).v);
             System.out.println(toFunc.id + " Call");
@@ -430,6 +430,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
                 ValueRelation.put(it, ret);
             }
         } else if(it instanceof LoadInst) {
+            FirstIn(2);
             Value ptr = (it.getUse(0));
             Reg rd = getVal(it);
 
@@ -451,7 +452,9 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             System.out.println("Load");
             Assign(rd, t0);
             System.out.println("Load");
+            LastOut(2);
         } else if(it instanceof StoreInst) {
+            FirstIn(3);
             Value ptr = it.getUse(1);
             Reg rs2 = getVal(it.getUse(0));
             Get(rs2, t2); // value
@@ -470,7 +473,9 @@ public class ViolentBuilder extends IRVisitor  { // Pass
                 Get(rs1, t1);
                 curBlock.addInst(new Sw(t2, t1, new Immediate(0)));
             }
+            LastOut(3);
         } else if(it instanceof PhiInst) {
+            FirstIn(1);
             Reg rd = getVal(it);
             //设计中jump都在block的最后,所以可以假设所有inst已经搞过了
             for(Pair < Value, BasicBlock > i : ((PhiInst) it).AllBr) {
@@ -491,15 +496,13 @@ public class ViolentBuilder extends IRVisitor  { // Pass
                 }
 
                 ASMBlock.Iterator = iter;
-                Reg t4 = Reg.getReg("t4");
-                Get(getVal(i.a), t4);
-                curBlock.addInst(new Mv(t0, t4));
+                Get(getVal(i.a), t0);
                 System.out.println("Phi");
                 Assign(rd, t0);
                 System.out.println("Phi");
                 ASMBlock.Iterator = null;
             }
-
+            LastOut(1);
         } else if(it instanceof RetInst) {
             if(!it.OperandList.isEmpty()) {
 //                System.out.println("AIYA");
@@ -511,7 +514,6 @@ public class ViolentBuilder extends IRVisitor  { // Pass
         } else if(it instanceof UnreachableInst) {
             curBlock.addInst(new Ret());
         }
-        LastOut();
     }
 
 }
