@@ -5,6 +5,7 @@ import Codegen.Assembly.ASMPrinter;
 import Codegen.Assembly.ASMValue.ASMRoot;
 import Codegen.Assembly.ViolentBuilder;
 import Codegen.IR.IRBuilder;
+import Codegen.IR.IRPrinter;
 import Codegen.IR.Value.Global.Module;
 import Semantic.AST.ASTBuilder;
 import Semantic.AST.Node.ProgramNode;
@@ -28,7 +29,7 @@ public class Compiler {
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/basic-package/basic-70.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-4.mx");
         //CharStream input = CharStreams.fromFileName("/home/sei/Compiler/sema/array-package/array-11.mx");
-//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/t70.mx");
+//        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/check.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/e1.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/sorting/merge_sort.mx");
 //        CharStream input = CharStreams.fromFileName("/home/sei/Compiler/codegen/shortest_path/spfa.mx");
@@ -64,13 +65,13 @@ public class Compiler {
 
             Module module = irBuilder.work();
 
-//            new IRPrinter(System.out).visit(module);
+            new IRPrinter(System.out).visit(module);
 
             ViolentBuilder violentBuilder = new ViolentBuilder(module);
             ASMRoot asmRoot = violentBuilder.doit();
             //new RegAllocator(asmRoot).work();
 //            FileOutputStream out = new FileOutputStream("test.s");
-            new ASMPrinter(new PrintStream("output.s")).visit(asmRoot);
+            new ASMPrinter(new PrintStream("test.s")).visit(asmRoot);
             new BuiltinPrinter("builtin.s");
         }
 

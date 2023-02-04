@@ -343,7 +343,7 @@ public class IRBuilder extends ASTVisitor {
             it.val = new IntConstant(Integer.parseInt(it.s));
         } else if(it.whi == 2) {
             StrConstant str = new StrConstant(it.s.substring(1, it.s.length() - 1));
-            str.id = "str.const";
+            str.id = ".strconst";
             module.AllConstant.add(str);
             it.val =
                     putInst(new GetElementPtrInst(I8STAR, str, IntConstant.ZERO, IntConstant.ZERO));  // Can be less???

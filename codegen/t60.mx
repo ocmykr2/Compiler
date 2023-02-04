@@ -22,7 +22,8 @@ class older{
 		for(i = 1; i < 100; i++)
 			for(j = i + 1; j < 100; j++)
 				for(k = j + 1; k < 100; k++)
-					if((i - i + i + j - j + j + k - k + k) * (100 * i + 10 * j + k) % 1926 == 0) age = (i - i + i + j - j + j + k - k + k) * (100 * i + 10 * j + k);
+					if((i + j + k) * (100 * i + 10 * j + k) % 1926 == 0)
+					 age = (i + j + k) * (100 * i + 10 * j + k);
 	}
 };
 int main(){

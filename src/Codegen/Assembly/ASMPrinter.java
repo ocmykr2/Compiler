@@ -19,15 +19,15 @@ public class ASMPrinter {
          this.out = out;
      }
 
-     public void printIndent(String format, Object ... Allpara) {
+     public void printOut(String format, Object ... Allpara) {
          out.print("\t");
          out.printf(format, Allpara);
          out.println();
      }
 
      public void visit(ASMRoot it) {
-         printIndent(".text");
-         printIndent(".file\t\"%s\"", it.id);
+         printOut(".text");
+         printOut(".file\t\"%s\"", it.id);
          out.println();
 
          if(!it.Allfunc.isEmpty()) {
@@ -36,13 +36,13 @@ public class ASMPrinter {
          }
 
          if(!it.AllVar.isEmpty()) {
-             printIndent(".section\t.sbss");
+             printOut(".section\t.sbss");
              it.AllVar.forEach((a, b) -> visit(b));
              out.println();
          }
 
          if(!it.AllConstant.isEmpty()) {
-             printIndent(".second .rodata");
+             printOut(".section .rodata");
              it.AllConstant.forEach(i -> visit(i));
              out.println();
          }
@@ -50,17 +50,17 @@ public class ASMPrinter {
 
      public void visit(Constant it) {
          out.printf("%s:\n", it.id);
-         printIndent(".asciz\t\"%s\"", ((StrConstant)it).ASMString());
+         printOut(".asciz\t\"%s\"", ((StrConstant)it).ASMString());
      }
 
      public void visit(Variable it) {
-         printIndent(".globl\t%s", it.id);
+         printOut(".globl\t%s", it.id);
          out.printf("%s:\n", it.id);
-         printIndent(".word\t0");
+         printOut(".word\t0");
      }
 
      public void visit(ASMFunc it) {
-         printIndent(".globl\t%s", it.id);
+         printOut(".globl\t%s", it.id);
          out.printf("%s:\n", it.id);
          it.Allblock.forEach(i -> visit(i));
          out.println();
@@ -69,7 +69,7 @@ public class ASMPrinter {
      public void visit(ASMBlock it) {
          out.printf("%s:\n", it.id);
          for(ASMInst i : it.AllInst) {
-             printIndent("%s", i.toString());
+             printOut("%s", i.toString());
          }
      }
 }

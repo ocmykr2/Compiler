@@ -241,7 +241,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
         Reg reg = null;
         if(val instanceof Constant) {
             if(val instanceof StrConstant) {
-                reg = Reg.getReg("t6");
+                reg = Reg.getReg("t5");
                 curBlock.addInst(new La(reg, new Symbol(val.id)));
             } else if(val instanceof NullConstant) {
                 reg = Reg.zero;
@@ -380,7 +380,8 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             Reg rs1 = getVal(it.getUse(0));
             Get(rs1, t1);
             System.out.println("Bitcast");
-            Assign(rd, t1);
+            curBlock.addInst(new Mv(t0, t1));
+            Assign(rd, t0);
             System.out.println("Bitcast");
         } else if(it instanceof BrInst) {
             Reg rs1 = getVal(it.getUse(0));
@@ -417,6 +418,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             ValueRelation.put(it, vreg);
         } else if(it instanceof CallInst) {
             ASMFunc toFunc = FuncRelation.get(it.OperandList.get(0).v);
+            System.out.println(toFunc.id + " Call");
             for(int i = 1; i < it.OperandList.size(); ++ i) {
                 Use cur = it.OperandList.get(i);
                 Get(getVal(cur.v), t1);
@@ -424,7 +426,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
                     curBlock.addInst(new Mv(Reg.getReg("a" + (i - 1)), t1));
                     continue;
                 }
-                curBlock.addInst(new Sw(t1, Reg.sp, new Immediate(OFFSET + (i - 9) * 4, false, toFunc)));
+                curBlock.addInst(new Sw(t1, Reg.sp, new Immediate(OFFSET + (i - 8) * 4, false, toFunc)));
             }
             curBlock.addInst(new Call(toFunc));
             if(!it.type.isVoid()) {
