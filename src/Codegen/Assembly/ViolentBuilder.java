@@ -409,16 +409,17 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             ValueRelation.put(it, vreg);
             LastOut(4);
         } else if(it instanceof CallInst) {
+            FirstIn(1);
             ASMFunc toFunc = FuncRelation.get(it.OperandList.get(0).v);
             System.out.println(toFunc.id + " Call");
             for(int i = 1; i < it.OperandList.size(); ++ i) {
                 Use cur = it.OperandList.get(i);
-                Get(getVal(cur.v), t1);
+                Get(getVal(cur.v), t0);
                 if(i < 8) {
-                    curBlock.addInst(new Mv(Reg.getReg("a" + (i - 1)), t1));
+                    curBlock.addInst(new Mv(Reg.getReg("a" + (i - 1)), t0));
                     continue;
                 }
-                curBlock.addInst(new Sw(t1, Reg.sp, new Immediate(OFFSET + (i - 1) * 4, false, toFunc)));
+                curBlock.addInst(new Sw(t0, Reg.sp, new Immediate(OFFSET + (i - 1) * 4, false, toFunc)));
             }
             curBlock.addInst(new Call(toFunc));
             if(!it.type.isVoid()) {
@@ -429,6 +430,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
                 // 一般使用a0来存储返回值
                 ValueRelation.put(it, ret);
             }
+            LastOut(1);
         } else if(it instanceof LoadInst) {
             FirstIn(2);
             Value ptr = (it.getUse(0));
@@ -460,9 +462,8 @@ public class ViolentBuilder extends IRVisitor  { // Pass
             Get(rs2, t2); // value
 
             if(ptr instanceof Variable) {
-                Reg t4 = Reg.getReg("t" + 4);
                 Symbol symbol = new Symbol(ptr.id);
-                curBlock.addInst(new Sw(t2, t4, symbol));
+                curBlock.addInst(new Sw(t2, t1, symbol));
             } else if (ptr instanceof AllocaInst) {
                 Reg rs1 = getVal(it.getUse(1));
                 System.out.println("Store");
