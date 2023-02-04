@@ -34,7 +34,7 @@ import static java.lang.StrictMath.max;
 public class ViolentBuilder extends IRVisitor  { // Pass
     public ASMRoot root;
 
-    public int OFFSET = 32;
+    public int OFFSET = 20;
 
     public Module module;
     public HashMap<Function, ASMFunc> FuncRelation = new HashMap<>();
@@ -136,15 +136,13 @@ public class ViolentBuilder extends IRVisitor  { // Pass
     }
 
     void FirstIn(int t) {
-        t = 4;
-        for(int i = 0; i < t; ++ i) {
+        for(int i = 0; i < 4; ++ i) {
             curBlock.addInst(new Sw(Reg.getReg("t" + i), Reg.sp, new Immediate(i * 4 + 4)));
         }
     }
 
     void LastOut(int t) {
-        t = 4;
-        for(int i = 0; i < t; ++ i) {
+        for(int i = 0; i < 4; ++ i) {
             curBlock.addInst(new Lw(Reg.getReg("t" + i), Reg.sp, new Immediate(i * 4 + 4)));
         }
     }
@@ -172,7 +170,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
         StackSize += 4;
         curBlock.addInst(new Sw(Reg.ra, Reg.sp, new Immediate(0)));
 
-        for(int i = 0; i < 7; ++ i) {
+        for(int i = 0; i < 4; ++ i) {
             curBlock.addInst(new Sw(Reg.getReg("t" + i), Reg.sp, new Immediate(StackSize)));
             StackSize += 4;
         }
@@ -201,7 +199,7 @@ public class ViolentBuilder extends IRVisitor  { // Pass
 
         // restore saved reg
         curBlock.addInst(new Lw(Reg.ra, Reg.sp, new Immediate(0)));
-        for(int i = 0; i < 7; ++ i) {
+        for(int i = 0; i < 4; ++ i) {
             curBlock.addInst(new Lw(Reg.getReg("t" + i), Reg.sp, new Immediate(i * 4 + 4)));
         }
 
